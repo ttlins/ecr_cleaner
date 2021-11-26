@@ -13,7 +13,6 @@ Simple helper script to list and delete ecr images.
     - having appropriate profiles in a configuration file in, for example, `~/.aws/credentials`
         - in that case, replacing the variables in the provided `.env` file should suffice
     - etc..
-    - see `.env.example` file in this repo for some example variables
     - for more info about that, check out [their docs](https://docs.aws.amazon.com/en_us/sdk-for-go/v1/developer-guide/configuring-sdk.html)
 
 ## Usage
@@ -22,7 +21,7 @@ Simple helper script to list and delete ecr images.
 ```bash
 ./ecr_cleaner --help
 ```
-    - `ecr_cleaner` is built with [cobra](https://github.com/spf13/cobra), so all commands have the `--help` flag
+Obs.: since this project is built with [cobra](https://github.com/spf13/cobra), all commands have the `--help` flag
 
 ### required flags
 - `ecr_cleaner` only uses two flags, both required. They are:
