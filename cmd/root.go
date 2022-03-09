@@ -36,6 +36,9 @@ func init() {
 	rootCmd.PersistentFlags().BoolP("escape", "e", false, "escapes regex metacharacters")
 	viper.BindPFlag("escape", rootCmd.PersistentFlags().Lookup("escape"))
 
+	rootCmd.PersistentFlags().BoolP("ignore-normal", "i", true, "ignores normal SemVer version")
+	viper.BindPFlag("ignoreNormal", rootCmd.PersistentFlags().Lookup("ignore-normal"))
+
 	rootCmd.AddCommand(listCmd)
 	rootCmd.AddCommand(deleteCmd)
 }

@@ -48,10 +48,9 @@ func (c *Client) ListImagesMatchingPattern(re *regexp.Regexp) ([]*ecr.ImageIdent
 		return nil, err
 	}
 
-	return filterImagesIds(
-		imgs,
-		matchFactory(re),
-	), nil
+	f := newImageFilter(matchFactory(re))
+
+	return f.filterImagesIds(imgs), nil
 }
 
 // DeleteImages deletes the passed images
