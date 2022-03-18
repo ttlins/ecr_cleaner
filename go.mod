@@ -6,6 +6,7 @@ require (
 	github.com/aws/aws-sdk-go v1.42.12
 	github.com/c-bata/go-prompt v0.2.6
 	github.com/joho/godotenv v1.4.0
+	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.9.0
 )
